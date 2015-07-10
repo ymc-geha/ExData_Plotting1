@@ -13,7 +13,7 @@ plot(sub_data$DateTime, sub_data$Sub_metering_1, type = 'n', ylab = 'Energy sub 
 lines(sub_data$DateTime, sub_data$Sub_metering_1, col= 'black')
 lines(sub_data$DateTime, sub_data$Sub_metering_2, col= 'red')
 lines(sub_data$DateTime, sub_data$Sub_metering_3, col= 'blue')
-legend('topright', lwd = 1, legend = c('Sub_metering_1', 'Sub_metering_2', 'Sub_metering_3'), col = c('black', 'red', 'blue'))
+legend('topright', lwd = 1, box.lwd = 0, legend = c('Sub_metering_1', 'Sub_metering_2', 'Sub_metering_3'), col = c('black', 'red', 'blue'))
 
 plot(sub_data$DateTime, sub_data$Voltage, type = 'l', ylab = 'Voltage', xlab = 'datetime')
 
